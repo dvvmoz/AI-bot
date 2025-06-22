@@ -1,0 +1,14 @@
+# Файл: requirements.txt
+# Описание: Список всех необходимых Python-библиотек.
+aiogram==2.25.1
+playwright
+apscheduler
+sqlalchemy[asyncio]
+asyncpg
+pgvector
+python-dotenv
+openai
+httpx
+beautifulsoup4
+pytest
+pytest-asyncio

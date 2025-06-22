@@ -1,7 +1,10 @@
-# Файл: init_db_script.py (временный)
-
 import sys
-sys.path.append('/path/to/legal_rag_bot')
+from pathlib import Path
+
+# Динамически добавляем корень проекта
+project_root = Path(__file__).parent.parent  # Поднимаемся на уровень выше legal_rag_bot
+sys.path.append(str(project_root))
+
 import asyncio
 from legal_rag_bot.core.db import init_db
 
